@@ -27,7 +27,7 @@ Der SQL-Dump aus der PostgresDB, die für die Empfehlung von Songs notwendig sin
 ### Verweise
 
 - Das erste Experiment (`1.Spotify_Recommenders.ipynb`) baut auf eigenen Daten aus dem Spotify-Hörverlauf auf.
-- Das zweite Experiment (`2.Tensorflow_Recommenders.ipynb`) zeigt, wie man mithilfe von TensorFlow Recommenders ein Modell zur Empfehlung von Inhalten entwickelt. 
+- Das zweite Experiment (`2.Tensorflow_Recommenders.ipynb`) zeigt, wie man mithilfe von TensorFlow Recommenders ein Modell zur Empfehlung von Inhalten entwickelt.
 
 ## Installation
 
@@ -40,9 +40,17 @@ pip install -r requirements.txt
 ```
 
 ## Spotify API
+
 Für das Experiment in der Datei 1.Spotify_Recommenders.ipynb wird der Zugriff auf die Spotify API benötigt. Es muss ein Entwicklerkonto erstellt und ein API-Schlüssel erhalten werden, um auf die Daten zugreifen zu können.
 
+Hinterlege die sensiblen SECRETS in `.env.example` und gebe diese Kommando danach ein
+
+```bash
+mv .env.example .env
+```
+
 ## Verwendung
+
 - 1.Spotify_Recommenders.ipynb
 
 Die Spotify-Daten müssen als JSON-Dateien geladen werden, die die richtigen Track-URIs und weitere benötigte Informationen enthalten.
@@ -60,6 +68,7 @@ Das Notebook zeigt, wie schnell ein einfaches Empfehlungssystem implementiert we
 Die Verwendung von Machine Learning-Kenntnissen wird empfohlen, um das Modell zu verbessern und weiter anzupassen.
 
 # Zusammenfassung
+
 Das Empfehlungssystem in 1.Spotify_Recommenders.ipynb basiert auf dem eigenen Hörverlauf und generiert Empfehlungen nur basierend auf den gehörten Tracks.
 
 Das TensorFlow-Modell in 2.Tensorflow_Recommenders.ipynb bietet eine skalierbare und benutzerfreundliche Möglichkeit, ein Empfehlungssystem mit TensorFlow Recommenders zu erstellen.
